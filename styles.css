@@ -51,6 +51,7 @@ a:hover {
     color: #3429ff;
     font-size: 1.5rem;
 }
+
 .subtitle {
     font-size: 1.2rem;
     opacity: 0.9;
@@ -97,6 +98,10 @@ a:hover {
     margin-top: 50px;
     font-size: 0.9rem;
     opacity: 0.8;
+}
+
+.footer a:hover{
+    font-size: 1.3rem;
 }
 
 .cta {
@@ -148,4 +153,34 @@ a:hover {
     background: white;
     color: #6C63FF;
     transform: scale(1.1);
+}
+
+.banner {
+    top: -30px;
+    left: 10px;
+    z-index: 1001;
+}
+
+.banner img {
+    height: 4em;
+}
+
+.banner:hover img {
+    animation: wave-flag 0.5s linear infinite alternate;
+}
+
+@keyframes wave-flag {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .banner,
+    .navbar {
+        display: none;
+    }
 }
